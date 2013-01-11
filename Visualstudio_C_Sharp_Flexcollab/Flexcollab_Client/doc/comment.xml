@@ -1,0 +1,2834 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebMeetingclient</name>
+    </assembly>
+    <members>
+        <member name="T:WebMeeting.ApplicationSharing">
+            <summary>
+            Summary description for ApplicationSharing.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.ApplicationSharing.SendTakenAnnotationRightsBackMessage">
+            <summary>
+            When u are in F4 Mode the other attendees cant do annotyation this function takes rights back from them 
+            </summary>
+        </member>
+        <member name="F:WebMeeting.ApplicationSharing.components">
+            <summary>	
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.ApplicationSharing.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.ApplicationSharing.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.ApplicationSharing.syn_sendLastAppImage">
+            <summary>
+            syn_sendLastAppImage () used to syncronize with new attendee which is new , actually it send last image
+            </summary>
+        </member>
+        <member name="M:WebMeeting.ApplicationSharing.LaunchProcess(System.Int32)">
+            <summary>
+            Launshes the given process 
+            given means, the handle of which is provided to it.
+            </summary>
+            <param name="winHandle"></param>
+        </member>
+        <member name="T:WebMeeting.DataType">
+            <summary>
+            Summary description for AppSharing.
+            </summary>
+            
+        </member>
+        <member name="M:WebMeeting.AppSharing.ImageToByteArray(System.Drawing.Image)">
+            
+            Converts a image to a byte array
+            
+            the image which you want to convert
+            
+        </member>
+        <member name="M:WebMeeting.AppSharing.Enum_Child">
+            <summary>
+            ///////////////////////////////////
+            
+            </summary>
+        </member>
+        <member name="F:WebMeeting.AppSharing.newWndProc">
+            <summary>
+            ///////////////////////////////////////////////////////////////////////////////////////////////////
+            </summary>
+            ////////////////////////////////////////////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////////////////////////////////////////
+            /// ///////////////////////////////////////////////////////////////////////////////////////////////////
+            /// ///////////////////////////////////////////////////////////////////////////////////////////////////
+            /// ///////////////////////////////////////////////////////////////////////////////////////////////////
+            
+        </member>
+        <member name="M:WebMeeting.AppSharing.StartSubclass(System.IntPtr)">
+            <summary>
+            App shre fixing ............
+            </summary>
+            <param name="hWnd"></param>
+            <param name="browser"></param>
+        </member>
+        <member name="F:WebMeeting.AppSharing.b">
+            ///////////////////////////////////////////////////////////////////////////////////////////////////
+            /// ///////////////////////////////////////////////////////////////////////////////////////////////////
+        </member>
+        <member name="M:WebMeeting.AppSharing.IsIEServerWindow(System.IntPtr)">
+            ///////////////////////////////////////////////////////////////////////////////////////////////////
+            /// ///////////////////////////////////////////////////////////////////////////////////////////////////
+            
+        </member>
+        <member name="M:WebMeeting.AppSharing.MyWndProc(System.IntPtr,System.Int32,System.Int32,System.Int32)">
+            ///////////////////////////////////////////////////////////////////////////////////////////////////
+            /// ///////////////////////////////////////////////////////////////////////////////////////////////////
+            
+        </member>
+        <member name="M:WebMeeting.AppSharing.CreateBitmapStructureForSharedWindow">
+            ///////////////////////////////////////////////////////////////////////////////////////////////////
+            /// ///////////////////////////////////////////////////////////////////////////////////////////////////
+            /// ///////////////////////////////////////////////////////////////////////////////////////////////////
+            /// ///////////////////////////////////////////////////////////////////////////////////////////////////
+            /// ///////////////////////////////////////////////////////////////////////////////////////////////////
+        </member>
+        <member name="M:WebMeeting.AppSharing.bCloseAppshare">
+             <summary>
+             /* Tasks, this method will do
+             *  1...check window exist...The IsWindow function determines whether the specified window handle identifies an existing window.
+            *	2...if window not exist then call method that will stop application sharing process and refresh process list
+             *	3...return true if sharewnd found
+            *  4...return false if sharewnd not found
+             */
+             </summary>
+             <returns></returns>
+             
+        </member>
+        <member name="M:WebMeeting.AppSharing.ScreenToClientEx(Win32.USER32.POINT@)">
+            <summary>
+             Get the relervant Mouse Position accordig to Shared Window X,Y
+            </summary>
+            <param name="pt"></param>
+        </member>
+        <member name="T:WebMeeting.BitmapManipulator">
+            <summary>
+            Utility class with static methods that do various useful things
+            with bitmaps that require multiple GDI+ calls with .NET CLR
+            </summary>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.GetBitmapFromUri(System.String)">
+            <summary>Attempts to download a bitmap from a given URI, then loads the bitmap into
+            a <code>Bitmap</code> object and returns.
+            
+            Obviously there are numerous failure cases for a function like this.  For ease 
+            of use, all errors will be reported in a catch-all <code>BitmapManipException</code>,
+            which provides a textual error message based on the exception that occurs.  As usual,
+            the underlying exception is available in <code>InnerException</code> property.
+            
+            Times out after 10 seconds waiting for a response from the server.</summary>
+            
+            <param name="uri">String containing URI from which to retrieve image</param>
+            
+            <returns>Bitmap object from URI.  Shouldn't ever be null, as any error will be reported
+                in an exception.</returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.GetBitmapFromUri(System.Uri)">
+            <summary>Attempts to download a bitmap from a given URI, then loads the bitmap into
+            a <code>Bitmap</code> object and returns.
+            
+            Obviously there are numerous failure cases for a function like this.  For ease
+            of use, all errors will be reported in a catch-all <code>BitmapManipException</code>,
+            which provides a textual error message based on the exception that occurs.  As usual,
+            the underlying exception is available in <code>InnerException</code> property.
+            
+            Times out after 10 seconds waiting for a response from the server.</summary>
+            
+            <param name="uri"><code>Uri</code> object specifying the URI from which to retrieve image</param>
+            
+            <returns>Bitmap object from URI.  Shouldn't ever be null, as any error will be reported
+                in an exception.</returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.GetBitmapFromUri(System.String,System.Int32)">
+            <summary>Attempts to download a bitmap from a given URI, then loads the bitmap into
+            a <code>Bitmap</code> object and returns.
+            
+            Obviously there are numerous failure cases for a function like this.  For ease 
+            of use, all errors will be reported in a catch-all <code>BitmapManipException</code>,
+            which provides a textual error message based on the exception that occurs.  As usual,
+            the underlying exception is available in <code>InnerException</code> property.
+            </summary>
+            
+            <param name="uri">String containing URI from which to retrieve image</param>
+            <param name="timeoutMs">Timeout (in milliseconds) to wait for response</param>
+            
+            <returns>Bitmap object from URI.  Shouldn't ever be null, as any error will be reported
+                in an exception.</returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.GetBitmapFromUri(System.Uri,System.Int32)">
+            <summary>Attempts to download a bitmap from a given URI, then loads the bitmap into
+            a <code>Bitmap</code> object and returns.
+            
+            Obviously there are numerous failure cases for a function like this.  For ease
+            of use, all errors will be reported in a catch-all <code>BitmapManipException</code>,
+            which provides a textual error message based on the exception that occurs.  As usual,
+            the underlying exception is available in <code>InnerException</code> property.
+            </summary>
+            
+            <param name="uri"><code>Uri</code> object specifying the URI from which to retrieve image</param>
+            <param name="timeoutMs">Timeout (in milliseconds) to wait for response</param>
+            
+            <returns>Bitmap object from URI.  Shouldn't ever be null, as any error will be reported
+                in an exception.</returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.ConvertBitmapToJpeg(System.Drawing.Bitmap,System.Int32)">
+            <summary>Converts a bitmap to a JPEG with a specific quality level</summary>
+            
+            <param name="inputBmp">Bitmap to convert</param>
+            <param name="quality">Specifies a quality from 0 (lowest) to 100 (highest), or -1 to leave
+            unspecified</param>
+            
+            <returns>A new bitmap object containing the input bitmap converted.
+                If the destination format and the target format are the same, returns
+                a clone of the destination bitmap.</returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.ConvertBitmapToTiff(System.Drawing.Bitmap,WebMeeting.BitmapManipulator.TiffCompressionEnum)">
+            <summary>Converts a bitmap to a Tiff with a specific compression</summary>
+            
+            <param name="inputBmp">Bitmap to convert</param>
+            <param name="compression">The compression to use on the TIFF file output.  Be warned that the CCITT3, CCITT4,
+                and RLE compression options are only applicable to TIFFs using a palette index color depth 
+                (that is, 1, 4, or 8 bpp).  Using any of these compression schemes with 24 or 32-bit 
+                TIFFs will throw an exception from the bowels of GDI+</param>
+            
+            <returns>A new bitmap object containing the input bitmap converted.
+                If the destination format and the target format are the same, returns
+                a clone of the destination bitmap.</returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.ConvertBitmap(System.Drawing.Bitmap,System.String)">
+            <summary>Converts a bitmap to another bitmap format, returning the new converted
+                bitmap
+            </summary>
+            
+            <param name="inputBmp">Bitmap to convert</param>
+            <param name="destMimeType">MIME type of format to convert to</param>
+            
+            <returns>A new bitmap object containing the input bitmap converted.
+                If the destination format and the target format are the same, returns
+                a clone of the destination bitmap.</returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.ConvertBitmap(System.Drawing.Bitmap,System.Drawing.Imaging.ImageFormat)">
+            <summary>Converts a bitmap to another bitmap format, returning the new converted
+                bitmap
+            </summary>
+            
+            <param name="inputBmp">Bitmap to convert</param>
+            <param name="destFormat">Bitmap format to convert to</param>
+            
+            <returns>A new bitmap object containing the input bitmap converted.
+                If the destination format and the target format are the same, returns
+                a clone of the destination bitmap.</returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.ScaleBitmap(System.Drawing.Bitmap,System.Double)">
+            <summary>
+            Scales a bitmap by a scale factor, growing or shrinking both axes while
+            maintaining the original aspect ratio
+            </summary>
+            <param name="inputBmp">Bitmap to scale</param>
+            <param name="scaleFactor">Factor by which to scale</param>
+            <returns>New bitmap containing image from inputBmp, scaled by the scale factor</returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.ScaleBitmap(System.Drawing.Bitmap,System.Double,System.Double)">
+            <summary>
+            Scales a bitmap by a scale factor, growing or shrinking both axes independently, 
+            possibly changing the aspect ration
+            </summary>
+            <param name="inputBmp">Bitmap to scale</param>
+            <param name="scaleFactor">Factor by which to scale</param>
+            <returns>New bitmap containing image from inputBmp, scaled by the scale factor</returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.ResizeBitmap(System.Drawing.Bitmap,System.Int32,System.Int32)">
+            <summary>
+            Resizes a bitmap's width and height independently
+            </summary>
+            <param name="inputBmp">Bitmap to resize</param>
+            <param name="imgWidth">New width</param>
+            <param name="imgHeight">New height</param>
+            <returns>Resized bitmap</returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.ThumbnailBitmap(System.Drawing.Bitmap,System.Int32,System.Int32)">
+            <summary>
+            Generates a thumbnail of the bitmap.  This is effectively a specialized
+            resize function, which maintains the aspect ratio of the image while
+            resizing it to ensure that both its width and height are within
+            caller-specified maximums
+            </summary>
+            <param name="inputBmp">Bitmap for which to generate thumbnail</param>
+            <param name="maxWidth">Maximum width of thumbnail</param>
+            <param name="maxHeight">Maximum height of thumbnail</param>
+            <returns>Thumbnail of inputBmp w/ the same aspect ratio, but
+            width and height both less than or equal to the maximum limits</returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.ReverseBitmap(System.Drawing.Bitmap)">
+            <summary>
+            Reverses a bitmap, effectively rotating it 180 degrees in 3D space about
+            the Y axis.  Results in a "mirror image" of the bitmap, reversed much
+            as it would be in a mirror
+            </summary>
+            <param name="inputBmp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.FlipBitmap(System.Drawing.Bitmap)">
+            <summary>
+            Reverses a bitmap, effectively rotating it 180 degrees in 3D space about
+            the X axis.  Results in an upside-down view of the image
+            </summary>
+            <param name="inputBmp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.OverlayBitmap(System.Drawing.Bitmap,System.Drawing.Bitmap,System.Int32,System.Drawing.Point)">
+            <summary>
+            Renders a bitmap over another bitmap, with a specific alpha value.
+            This can be used to overlay a logo or watermark over a bitmap
+            </summary>
+            <param name="destBmp">Bitmap over which image is to be overlaid</param>
+            <param name="bmpToOverlay">Bitmap to overlay</param>
+            <param name="overlayAlpha">Alpha value fo overlay bitmap.  0 = fully transparent, 100 = fully opaque</param>
+            <param name="overlayPoint">Location in destination bitmap where overlay image will be placed</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.OverlayBitmap(System.Drawing.Bitmap,System.Drawing.Bitmap,System.Int32,WebMeeting.BitmapManipulator.ImageCornerEnum)">
+            <summary>
+            Renders a bitmap over another bitmap, with a specific alpha value.
+            This can be used to overlay a logo or watermark over a bitmap
+            </summary>
+            <param name="destBmp">Bitmap over which image is to be overlaid</param>
+            <param name="bmpToOverlay">Bitmap to overlay</param>
+            <param name="overlayAlpha">Alpha value fo overlay bitmap.  0 = fully transparent, 100 = fully opaque</param>
+            <param name="corner">Corner of destination bitmap to place overlay bitmap</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebMeeting.BitmapManipulator.CropBitmap(System.Drawing.Bitmap,System.Drawing.Rectangle)">
+            <summary>
+            Crops an image, resulting in a new image consisting of the portion of the
+            original image contained in a provided bounding rectangle
+            </summary>
+            <param name="inputBmp">Bitmap to crop</param>
+            <param name="cropRectangle">Rectangle specifying the range of pixels
+            within the image which is to be retained</param>
+            <returns>New bitmap consisting of the contents of the crop rectangle</returns>
+        </member>
+        <member name="T:WebMeeting.Client.AppSharing.SharedWindowHostFrm">
+            <summary>
+            Summary description for SmallWindow.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.AppSharing.SharedWindowHostFrm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.AppSharing.SharedWindowHostFrm.appWin">
+            <summary>
+            Handle to the application Window
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.AppSharing.SharedWindowHostFrm.OnSizeChanged(System.EventArgs)">
+            <summary>
+            Force redraw of control when size changes
+            </summary>
+            <param name="e">Not used</param>
+        </member>
+        <member name="F:WebMeeting.Client.AppSharing.SharedWindowHostFrm.created">
+            <summary>
+            Track if the application has been created
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.AppSharing.SharedWindowHostFrm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.AppSharing.SharedWindowHostFrm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.AppSharing.SharedWindowHostFrm.RestoreShareWindowParent">
+            <summary>
+            to resote the shared window parent 
+            
+            
+            </summary>
+        </member>
+        <member name="T:WebMeeting.ThreadPoolUnit">
+            <summary>
+            Summary description for ThreadPoolUnit.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.TypedText">
+            <summary>
+            Summary description for TypedText.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.TypedText.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.TypedText.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.TypedText.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.UserActivityHook">
+            <summary>
+            This class allows you to tap keyboard and mouse and / or to detect their activity even when an 
+            application runes in background or does not have any user interface at all. This class raises 
+            common .NET events with KeyEventArgs and MouseEventArgs so you can easily retrive any information you need.
+            </summary>
+            <remarks>
+            	created by - Georgi
+            	created on - 22.05.2004 13:08:01
+            </remarks>
+        </member>
+        <member name="M:WebMeeting.UserActivityHook.#ctor">
+            <summary>
+            Default constructor - starts hooks automatically
+            </summary>
+        </member>
+        <member name="T:BalloonCS.HoverBalloon">
+            <summary>
+            A sample class to manipulate ballon tooltips.
+            Windows XP balloon-tips if used properly can 
+            be very helpful.
+            This class creates a balloon tooltip.
+            This becomes useful for showing important information 
+            quickly to the user.
+            For example in a data-entry form full of 
+            controls the most important
+            and used control is the Order Placement button.
+            Guide the user by using this hover balloon on it.
+            This helps in a shorter learning cycle of the 
+            application.
+            </summary>
+        </member>
+        <member name="P:BalloonCS.HoverBalloon.MaximumTextWidth">
+            <summary>
+            Sets the maximum text width of the tooltip text.
+            At that length the tooltip will start wrapping text 
+            over to the next line. 
+            </summary>
+        </member>
+        <member name="P:BalloonCS.HoverBalloon.Title">
+            <summary>
+            Sets up the title of the tooltip.
+            </summary>
+        </member>
+        <member name="P:BalloonCS.HoverBalloon.TitleIcon">
+            <summary>
+            Sets the icon for the tooltip.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.ClientDataBase.DatabaseAccess">
+            <summary>
+            Summary description for DatabaseAccess.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ClientDataBase.DatabaseAccess.EnterResolutiontoDB(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Enters the given resolutionm in the database
+            </summary>
+            <param name="inc_resolution"></param>
+            <returns></returns>
+        </member>
+        <member name="M:rpaulo.toolbar.ToolBarDockArea.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:rpaulo.toolbar.ToolBarDockHolder.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:SimpleMAPIdotNET.SendForm">
+            <summary>
+            Summary description for SendForm.
+            </summary>
+        </member>
+        <member name="F:SimpleMAPIdotNET.SendForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SimpleMAPIdotNET.SendForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:SimpleMAPIdotNET.SendForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:CommonOfProcessList.CCursor.Dispose">
+            <summary>Releases all resources.</summary>
+            <remarks>Call this method when you are finished with the instance.</remarks>
+        </member>
+        <member name="M:CommonOfProcessList.StatusBarText.Dispose">
+            <summary>Releases all resources.</summary>
+            <remarks>Call this method when you are finished with the instance.</remarks>
+        </member>
+        <member name="M:CommonOfProcessList.NodeTree.ToString">
+            <summary>Obtains the <see cref="T:System.String"/> representation of this instance.</summary>
+            <returns>The <see cref="T:System.String"/> representation of this instance.</returns>
+            <remarks>
+            <p>
+            This method returns a <see cref="T:System.String"/> that represents this instance.
+            </p>
+            </remarks>
+        </member>
+        <member name="M:CommonOfProcessList.NodeTree.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Populates a SerializationInfo with the data needed to serialize the target object.</summary>
+            <param name="info">The SerializationInfo to populate with data.</param>
+            <param name="context">The destination for this serialization.</param>
+            <remarks>
+            <p>This method is called during serialization.</p>
+            <p>Do not call this method directly.</p>
+            </remarks>
+        </member>
+        <member name="M:CommonOfProcessList.NodeTree.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance of the class during deserialization.</summary>
+            <param name="info">The SerializationInfo populated with data.</param>
+            <param name="context">The source for this serialization.</param>
+            <remarks>
+            <p>This method is called during deserialization.</p>
+            <p>Do not call this method directly.</p>
+            </remarks>
+        </member>
+        <member name="M:CommonOfProcessList.NodeTree.RootObject.ToString">
+            <summary>Obtains the <see cref="T:System.String"/> representation of this instance.</summary>
+            <returns>The <see cref="T:System.String"/> representation of this instance.</returns>
+            <remarks>
+            <p>
+            This method returns a <see cref="T:System.String"/> that represents this instance.
+            </p>
+            </remarks>
+        </member>
+        <member name="M:CommonOfProcessList.NodeTree.RootObject.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Populates a SerializationInfo with the data needed to serialize the target object.</summary>
+            <param name="info">The SerializationInfo to populate with data.</param>
+            <param name="context">The destination for this serialization.</param>
+            <remarks>
+            <p>This method is called during serialization.</p>
+            <p>Do not call this method directly.</p>
+            </remarks>
+        </member>
+        <member name="M:CommonOfProcessList.NodeTree.RootObject.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance of the class during deserialization.</summary>
+            <param name="info">The SerializationInfo populated with data.</param>
+            <param name="context">The source for this serialization.</param>
+            <remarks>
+            <p>This method is called during deserialization.</p>
+            <p>Do not call this method directly.</p>
+            </remarks>
+        </member>
+        <member name="T:BinaryReaderWriter.LogWriter">
+            <summary>
+            Summary description for LogWriter.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.ManageContent.DownloadingComplete">
+            <summary>
+            Summary description for frmDownloader.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.ManageContent.frmDownloader.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContent.frmDownloader.ToShortPathName(System.String)">
+            <summary>
+            The ToShortPathName function retrieves the short path from of a specified long input path
+            </summary>
+            <param name="longName">The long name path</param>
+            <returns>A short name path string</returns>
+            <remarks>The file must exist for this to work.</remarks>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContent.frmDownloader.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContent.frmDownloader.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:WebMeeting.Client.ManageContent.frmDownloader.DownloadInstructions.URLs">
+            <summary>
+            shallow copy
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.ManageContentBookmarks">
+            <summary>
+            Summary description for ManageContent.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.ManageContentBookmarks.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContentBookmarks.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContentBookmarks.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.ManageContentInfo">
+            <summary>
+            Summary description for ManageContent.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.ManageContentInfo.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContentInfo.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContentInfo.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.ManageContentWebEvaluations">
+            <summary>
+            Summary description for ManageContent.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.ManageContentWebEvaluations.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContentWebEvaluations.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContentWebEvaluations.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.ManageContentWebFiles">
+            <summary>
+            Summary description for ManageContent.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.ManageContentWebFiles.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContentWebFiles.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContentWebFiles.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.ManageContentWebPolls">
+            <summary>
+            Summary description for ManageContent.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.ManageContentWebPolls.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContentWebPolls.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContentWebPolls.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.ManageContentWebPresentations">
+            <summary>
+            Summary description for ManageContent.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.ManageContentWebPresentations.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContentWebPresentations.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContentWebPresentations.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ManageContentWebPresentations.listWebPresentations_DoubleClick(System.Object,System.EventArgs)">
+            <summary>
+            old code not used Now 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:WebMeeting.Client.Minuts_Meeting.Minuts_Controller">
+            <summary>
+            Summary description for Minuts_Controller.
+            This class was created by Zaeem in order to add the minuts of minute (MM)
+             
+            </summary>
+            
+        </member>
+        <member name="M:WebMeeting.Client.Minuts_Meeting.Minuts_Controller._Snapshot(WebMeeting.Common.MessageObject)">
+            <summary>
+            This Method will only be called by the Host
+            </summary>
+            <param name="incoming_MMmsg">  this message comes from the Network and of type Minuts of meeting</param>
+        </member>
+        <member name="M:WebMeeting.Client.Minuts_Meeting.Minuts_Controller.Whiteboard_Snapshot(WebMeeting.Common.Mes_MinutsofMeeting)">
+            
+            <summary>
+            This Method will only be called by the Host
+            </summary>
+            <param name="incoming_MMmsg">  this message comes from the Network and of type Minuts of meeting</param>
+        </member>
+        <member name="M:WebMeeting.Client.Minuts_Meeting.Minuts_Controller.Appshare_Snapshot(WebMeeting.Common.Mes_MinutsofMeeting)">
+            <summary>
+            This Method will only be called by the Host
+            </summary>
+            <param name="incoming_MMmsg">  this message comes from the Network and of type Minuts of meeting</param>
+        </member>
+        <member name="M:WebMeeting.Client.Minuts_Meeting.Minuts_Controller.WebBrowser_Snapshot(WebMeeting.Common.Mes_MinutsofMeeting)">
+            <summary>
+            This Method will only be called by the Host for WebBrowser
+            </summary>
+            <param name="incoming_MMmsg">  this message comes from the Network and of type Minuts of meeting</param>
+        </member>
+        <member name="M:WebMeeting.Client.Minuts_Meeting.Minuts_Controller.Send_MinutsofMeetingMsg_Application">
+            <summary>
+            This Method should only be called by the presenter
+            This method make and send the Minuts of minute message to the Host 
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Minuts_Meeting.Minuts_Controller.Send_MinutsofMeetingMsg_Whiteboard">
+            <summary>
+            This Method should only be called by the presenter
+            This method make and send the Minuts of minute message to the Host 
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Minuts_Meeting.Minuts_Controller.Send_MinutsofMeetingMsg_WebBrowser">
+            <summary>
+            This Method should only be called by the presenter
+            This method make and send the Minuts of minute message to the Host 
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.Minuts_Meeting.Progressbar">
+            <summary>
+            Summary description for Progressbar.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.Minuts_Meeting.Progressbar.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Minuts_Meeting.Progressbar.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Minuts_Meeting.Progressbar.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.NetworkDiagonstic.GenerateString">
+            <summary>
+            Summary description for GenerateString.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.NetworkDiagonstic.GenerateString.Generate">
+            <summary>
+            Generates a random password.
+            </summary>
+            <returns>
+            Randomly generated password.
+            </returns>
+            <remarks>
+            The length of the generated password will be determined at
+            random. It will be no shorter than the minimum default and
+            no longer than maximum default.
+            </remarks>
+        </member>
+        <member name="M:WebMeeting.Client.NetworkDiagonstic.GenerateString.Generate(System.Int32)">
+            <summary>
+            Generates a random password of the exact length.
+            </summary>
+            <param name="length">
+            Exact password length.
+            </param>
+            <returns>
+            Randomly generated password.
+            </returns>
+        </member>
+        <member name="M:WebMeeting.Client.NetworkDiagonstic.GenerateString.Generate(System.Int32,System.Int32)">
+            <summary>
+            Generates a random password.
+            </summary>
+            <param name="minLength">
+            Minimum password length.
+            </param>
+            <param name="maxLength">
+            Maximum password length.
+            </param>
+            <returns>
+            Randomly generated password.
+            </returns>
+            <remarks>
+            The length of the generated password will be determined at
+            random and it will fall with the range determined by the
+            function parameters.
+            </remarks>
+        </member>
+        <member name="T:WebMeeting.Client.NetworkDiagonstic.TestNetwork">
+            <summary>
+            Summary description for TestNetwork.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.NetworkDiagonstic.TestNetwork.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.NetworkDiagonstic.TestNetwork.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.NetworkDiagonstic.TestNetwork.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.Polling.frm_PollAttendee">
+            <summary>
+            Summary description for frm_PollAttendee.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.Polling.frm_PollAttendee.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Polling.frm_PollAttendee.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Polling.frm_PollAttendee.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.Polling.frm_PollPresenter">
+            <summary>
+            Summary description for frm_PollPresenter.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.Polling.frm_PollPresenter.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Polling.frm_PollPresenter.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Polling.frm_PollPresenter.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Polling.PollAttendeeForm">
+            <summary>
+            Summary description for PollAttendeeForm.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Polling.PollAttendeeForm.getQuestionText">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Polling.PollAttendeeForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Polling.PollAttendeeForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Polling.Del_Attendeeform">
+            <summary>
+            Summary description for Polling.
+            Code improvment done by Zaeem.
+            </summary>
+            
+        </member>
+        <member name="T:WebMeeting.Client.PollingFreeFormAnswerForm">
+            <summary>
+            Summary description for PollingFreeFormAnswerForm.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.PollingFreeFormAnswerForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.PollingFreeFormAnswerForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.PollingFreeFormAnswerForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Polling.PollingOptions">
+            <summary>
+            Summary description for PollingOptions.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Polling.PollingOptions.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Polling.PollingOptions.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Polling.PollingOptions.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Polling.PollingQuestionDetails">
+            <summary>
+            Summary description for Form2.
+            Code improvement and Exception Handling done by Zaeem
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Polling.PollingQuestionDetails.textQuestion">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Polling.PollingQuestionDetails.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Polling.PollingQuestionDetails.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Polling.PollingQuestionDetails.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Polling.PollResult">
+            <summary>
+            Summary description for Form1.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Polling.PollResult.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Polling.PollResult.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Polling.PollResult.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.QAStuff.frmQAAttendee">
+            <summary>
+            Summary description for frmQAAttendee.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.QAStuff.frmQAAttendee.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.QAStuff.frmQAAttendee.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.QAStuff.frmQAAttendee.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.QAStuff.frmQAPresenter">
+            <summary>
+            Summary description for frmQAPresenter.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.QAStuff.frmQAPresenter.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.QAStuff.frmQAPresenter.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.QAStuff.frmQAPresenter.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.Resolution.CResolution">
+            <summary>
+            Summary description for Resolution.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.Resolution.ResolutionController">
+            <summary>
+            Summary description for ResolutionController.
+            </summary>
+            
+        </member>
+        <member name="T:DirectXTimer">
+            <summary>
+            Enumeration for various actions our timer can perform
+            </summary>
+        </member>
+        <member name="T:DXUtil">
+            <summary>
+            Generic utility functions for our samples
+            </summary>
+        </member>
+        <member name="M:DXUtil.Timer(DirectXTimer)">
+            <summary>
+            Performs timer opertations. Use the following commands:
+            
+                     DirectXTimer.Reset - to reset the timer
+                     DirectXTimer.Start - to start the timer
+                     DirectXTimer.Stop - to stop (or pause) the timer
+                     DirectXTimer.Advance - to advance the timer by 0.1 seconds
+                     DirectXTimer.GetAbsoluteTime - to get the absolute system time
+                     DirectXTimer.GetApplicationTime - to get the current time
+                     DirectXTimer.GetElapsedTime - to get the time that elapsed between TIMER_GETELAPSEDTIME calls
+            
+            </summary>
+        </member>
+        <member name="M:DXUtil.FindMediaFile(System.String,System.String)">
+            <summary>
+            Returns a valid path to a DXSDK media file
+            </summary>
+            <param name="path">Initial path to search</param>
+            <param name="filename">Filename we're searching for</param>
+            <returns>Full path to the file</returns>
+        </member>
+        <member name="M:DXUtil.AppendDirectorySeparator(System.String)">
+            <summary>
+            Returns a valid string with a directory separator at the end.
+            </summary>
+        </member>
+        <member name="P:DXUtil.SdkMediaPath">
+            <summary>
+            Returns the DirectX SDK media path
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.Screen_Capture.frm_AudioConfig">
+            <summary>
+            Summary description for frm_AudioConfig.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.Screen_Capture.frm_AudioConfig.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Screen_Capture.frm_AudioConfig.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Screen_Capture.frm_AudioConfig.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.Screen_Capture.frm_AudioConfig2">
+            <summary>
+            Summary description for frm_AudioConfig2.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.Screen_Capture.frm_AudioConfig2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Screen_Capture.frm_AudioConfig2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Screen_Capture.frm_AudioConfig2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.Screen_Capture.frm_Rec">
+            <summary>
+            Summary description for frm_Main.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Screen_Capture.frm_Rec.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.Screen_Capture.frmPerformance">
+            <summary>
+            Summary description for Form1.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.Screen_Capture.frmPerformance.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Screen_Capture.frmPerformance.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Screen_Capture.frmPerformance.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.Screen_Capture.MainForm">
+            <summary>
+            Summary description for Form1.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.Screen_Capture.MainForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Screen_Capture.MainForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Screen_Capture.MainForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.Screen_Capture.Playback">
+            <summary>
+            Summary description for Playback.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.Screen_Capture.Playback.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Screen_Capture.Playback.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Screen_Capture.Playback.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ScreenCapture.ScreenCapture">
+            <summary>
+            Summary description for ScreenCapture.
+            </summary>
+        </member>
+        <member name="T:ScreenCapture.ScreenControl">
+            <summary>
+            Summary description for ScreenControl.
+            </summary>
+        </member>
+        <member name="M:ScreenCapture.ScreenControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ScreenCapture.SourceEnum">
+            <summary>
+            Summary description for SourceEnum.
+            </summary>
+        </member>
+        <member name="F:ScreenCapture.SourceEnum.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ScreenCapture.SourceEnum.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:ScreenCapture.SourceEnum.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.LogServiceOnline.LogService">
+            <remarks/>
+        </member>
+        <member name="M:WebMeeting.Client.LogServiceOnline.LogService.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:WebMeeting.Client.LogServiceOnline.LogService.LogRecord(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:WebMeeting.Client.LogServiceOnline.LogService.BeginLogRecord(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:WebMeeting.Client.LogServiceOnline.LogService.EndLogRecord(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="T:WebMeeting.Client.WhiteBoard.enum_WhiteboardToolCode">
+            <summary>
+            Drawing tools Enumeration
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.WhiteBoard.Whiteboard">
+            <summary>
+            Whiteboard Control is the control designed for all the module .
+            </summary>
+            
+        </member>
+        <member name="M:WebMeeting.Client.WhiteBoard.Whiteboard.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.WhiteBoard.Whiteboard.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.WhiteBoard.Whiteboard.setModule(System.Int32)">
+            <summary>
+            pass 
+            1 for Whiteboard
+            2 for Appshare
+            3 for Webshare 
+            4 for Docshare
+            
+            </summary>
+            <param name="inc_module"></param>
+        </member>
+        <member name="M:WebMeeting.Client.WhiteBoard.Whiteboard.setGraphicsobject">
+            <summary>
+            This function does two things 
+            1. Set the grphics object to point towards the latest image 
+            2. Update the Gloabal Image 
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.WhiteBoard.Whiteboard._picBox_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            This method is for those tools which require explicit left click 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WebMeeting.Client.WhiteBoard.Whiteboard.ReAnnotate(System.Int32)">
+            <summary>
+            This Methods Adds all the Mesages from MsgPool_Clear ==>MsgPool_Annotation
+            Because Consumethread is gona consume "MsgPool_Annotation" Automatically
+            </summary>
+            <param name="clientID">whoes annotation message ere to be cleared </param>
+        </member>
+        <member name="M:WebMeeting.Client.WhiteBoard.Whiteboard.ConsumeThread">
+            <summary>
+            
+            This Method consume the Annotation Genric messgae designed for different modules
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.WMIStuff.SystemInformationClass">
+            <summary>
+            Summary description for SystemInformationClass.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.WMIStuff.SystemInformationClass.ExtractSysInformation">
+            <summary>
+            Extract System Information in the UDFStructSysInfo
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.WMIStuff.SystemInformationClass.UDFStructSysInfo">
+            <summary>
+            User Defined structed system info
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.WMIStuff.SystemInformationClass.UDFStructSysInfo.strProcessorName">
+            <summary>
+            System Processor Name
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.WMIStuff.SystemInformationClass.UDFStructSysInfo.strSystemDrive">
+            <summary>
+            System Drive
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.WMIStuff.SystemInformationClass.UDFStructSysInfo.strDirectoryPath">
+            <summary>
+            Application Directory Path
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.WMIStuff.SystemInformationClass.UDFStructSysInfo.strOperatingSystem">
+            <summary>
+            Operating System Name
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.WMIStuff.SystemInformationClass.UDFStructSysInfo.strOperatingSystemPack">
+            <summary>
+            Operating System Service Pack
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.WMIStuff.SystemInformationClass.UDFStructSysInfo.nPhysicalRam">
+            <summary>
+            Total Physical Ram
+            Using 
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.WMIStuff.SystemInformationClass.UDFStructSysInfo.nTotalVirtualMemory">
+            <summary>
+            Total Virtual Memory
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.WMIStuff.WebServiceLogging">
+            <summary>
+            Summary description for WebServiceLogging.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.aboutWebMeeting">
+            <summary>
+            Summary description for aboutWebMeeting.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.aboutWebMeeting.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.aboutWebMeeting.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.aboutWebMeeting.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.AccessCodesForm">
+            <summary>
+            Summary description for AccessCodes.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.AccessCodesForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.AccessCodesForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.AccessCodesForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.advertiseBrowser">
+            <summary>
+            Summary description for advertiseBrowser.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.advertiseBrowser.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.advertiseBrowser.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.advertiseBrowser.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.AnnotationForm">
+            <summary>
+            Summary description for AnnotationForm.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.AnnotationForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.AnnotationForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.AnnotationForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.AudDllFuncs">
+            <summary>
+            Summary description for AudioComponent.
+            </summary>
+            
+        </member>
+        <member name="T:WebMeeting.browser">
+            <summary>
+            Summary description for browser.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.browser.SetSize(System.Int32,System.Int32)">
+            <summary>
+            This function set the size of the browser control equal to the given size
+            </summary>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:WebMeeting.browser.PresenterInterface">
+            <summary>
+            This function makes the presenter's interface for the browser control
+            </summary>
+        </member>
+        <member name="M:WebMeeting.browser.AttendeeInterface">
+            <summary>
+            This function makes the presenter's interface for the browser control
+            </summary>
+        </member>
+        <member name="M:WebMeeting.browser.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.browser.InitializeWhiteboard">
+            <summary>
+            Made by Zaeem 
+            initialise and start the whiteboard Threads. 
+            </summary>
+        </member>
+        <member name="M:WebMeeting.browser.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.browser.TakeBrowseJPG_Image(System.Boolean,System.String)">
+            <summary>
+            This function convert the web page to image and retuen an image object 
+            depending upon the strategy choosed.
+            There are two strtegies which are currently implemented 
+            1 for the pages having single pages and the other one for the pages having multiple docs like CNN .com
+            </summary>
+            <param name="bool_Multidoc"></param>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebMeeting.browser.Window(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Captures the window or part thereof to a bitmap image.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.browser.TakeBrowseJPG(System.String)">
+            <summary>
+            This function  takes the snapshot of the browser control and 
+            save it in a given directory
+            It covers both modes of webshare 
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebMeeting.browser.CleanandClear">
+            <summary>
+            Made By Zaeem to clean the threads, Initialse few vaiables and the other resources taken by the Image based Webbrowser conrtol.
+            
+            </summary>
+        </member>
+        <member name="M:WebMeeting.chatControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            
+        </member>
+        <member name="M:WebMeeting.chatControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.chatMessageAlert">
+            <summary>
+            Summary description for chatMessageAlert.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.chatMessageAlert.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.chatMessageAlert.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.ChangeResolution(System.Boolean)">
+            <summary>
+            changes the resolution and the icons stuff on startup 
+            </summary>
+            <param name=" startup">called on the start up, if its false then it is called from the end </param>
+            <returns></returns>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.IfIamthePresenter">
+            <summary>
+            This method checks whether i am the presenter or not
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.Close_Click(System.Object,System.EventArgs)">
+            <summary>
+            For closing the opened tabs
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.UpdateMainMenuAccess">
+            <summary>
+            On profile changes the Menus are Updated accordingly.
+            A lot of extra work is done here 
+            1 if this is fo rMenu then Why buttons are changes here ?
+            2 Why do we get the controls of web or document or stuffs like that 
+            3 Why the drawing colors are assigned here
+            4 Why the chat tab is controled here.
+            5 This method is suppose to be called only when we get the AttendeUpdate msgs
+            then why all the stuff is done here or whenever menus and rights needed to be changed.
+            </summary>
+            
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.ChangeAccessCodesEx">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.TakeSnapShot_MM(System.String)">
+            <summary>
+            This function is used in Minuts of meeting to take the snap shot of the particular module.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.TakeSnapShot_MM_WebBrowser(System.String)">
+            <summary>
+            This function is used in Minuts of meeting to take the snap shot of the particular module.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.fromdb_to_Upload">
+            <summary>
+            This function copies all the contents in a file first and then Upload them 
+            by taking the Ftp Imformation from the configuration file.
+            if this method returns true then it should send the message to the Server to add those records 
+            in the database.
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.listParticipents_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Zaeem View 
+            This method is useless and should not be here
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.tabBodyResize">
+            <summary>
+            used to resize to tabBody
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.listParticipents_DoubleClick(System.Object,System.EventArgs)">
+            <summary>
+            Used in partial rights managment
+            But currently not used
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.ifHostisPresenter">
+            <summary>
+            This function should only be called by the Host
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.GetHostId_Registration">
+            <summary>
+            This method returns Host registration Id as an integer 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.NoofLogicalPresenters(WebMeeting.Common.ClientProfile)">
+            <summary>
+            // this Methods only called from here 
+            When the presenter leaves the meeting 
+            All tabs are closed and drawing tools are Syncronyzed
+            flag_checkbox=false;
+            Assigning false to the above flag means 
+            that now there is no presenter in the meeting
+            and you are free to give any one the rights
+            </summary>
+            <param name="comin_clientProf"></param>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.WhoisDropped(WebMeeting.Common.ClientProfile)">
+            <summary>
+            This method should run when the Host is dropped from the meeting
+            The purpose of this method is that the meeting shd come to the initial
+            state i.e Presenter becomnes Attendee , Drawing tools are Syncronyzed 
+            and all opened instances are closed.
+            It should run only for Host
+            
+            </summary>
+            <param name="comin_clientProf"></param>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.ListParticipentCheckBoxChange(System.Int32,WebMeeting.Common.ClientType)">
+            <summary>
+            Changes the state of the check boxes.
+            zaeem view:
+            This function is called whenever the state of the check boxes are changed.
+            But the conditions in this functions are not right.
+             
+            </summary>
+            <param name="nIndex"></param>
+            <param name="clientType"></param>
+            
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.listParticipents_ItemCheck(System.Object,System.Windows.Forms.ItemCheckEventArgs)">
+            <summary>
+            Sends the main message of rights Managment
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.Forciblytakerights(WebMeeting.Common.ClientProfile,System.Windows.Forms.ItemCheckEventArgs)">
+            <summary>
+            This method suppose to be taken rights back from the profile passed in it 
+            </summary>
+            <param name="profile"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.SendClientProfileUpdateMessage(WebMeeting.Common.ClientProfile)">
+            <summary>
+            Used to send the Attendee Update message to the server.
+            </summary>
+            <param name="profile"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WebMeeting.Client.ClientUI.HostCloseAllTabs" -->
+        <!-- Badly formed XML comment ignored for member "M:WebMeeting.Client.ClientUI.CloseMsg" -->
+        <member name="M:WebMeeting.Client.ClientUI.HideQA_forms">
+            <summary>
+            This Method is made by Zaeem 
+            It Hides the QA forms on different event like connection reestablish
+            
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.ClientUI.SyncronizeDrawingTools">
+            <summary>
+            CAUTION 
+            This method Syncronyze the drawing tools and has to be called by the host only
+            //OR ELSE THE STATUS OF ANNOTATION TOOOL TFOR THE HOST WILL NOT BE UPGRADED 
+            
+            
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.CustomExceptionunhandler">
+            <summary>
+            Summary description for CustomExceptionunhandler.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.DebugConsoleWrapper">
+            <summary>
+            Summary description for DebugConsole.
+            </summary>
+        </member>
+        <member name="F:System.Diagnostics.DebugConsoleWrapper.components">
+            <summary>
+            Required designer variable.
+            </summary>
+            
+        </member>
+        <member name="M:System.Diagnostics.DebugConsoleWrapper.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:System.Diagnostics.DebugConsoleWrapper.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.DebugForm">
+            <summary>
+            Summary description for DebugForm.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.DebugForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.DebugForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.DebugForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.DesktopCloseWnd">
+            <summary>
+            Summary description for DesktopCloseWnd.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.DesktopCloseWnd.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.DesktopCloseWnd.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.DesktopCloseWnd.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.documentSharingControl">
+            <summary>
+            Summary description for documentSharingControl.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.documentSharingControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.documentSharingControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.documentSharingControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.documentSharingControl.StartDocumentSharingInitiater(System.String)">
+            <summary>
+            This function is called for presenter 
+            </summary>
+            <param name="strFileName"></param>
+            
+        </member>
+        <member name="M:WebMeeting.Client.documentSharingControl.ProcessMessage(WebMeeting.Common.MessageObject)">
+            <summary>
+            Processes a message in the queue
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:WebMeeting.Client.documentSharingControl.ProcessMessageManageContent(WebMeeting.Common.DocumentSharing)">
+            <summary>
+            Processes a MangeContent SlideShow message in the queue
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:WebMeeting.Client.documentSharingControl.ClearThumbnailsFromPanel">
+            <summary>
+            ClearThumbnailsFromPanel() used to clear thumnails from the panelAnnotations control and dispose it.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.documentSharingControl.threadFunctionStop">
+            <summary>
+            threadFunctionStop () used to stop threads at stop document sharing , \nwhich are started at initialization of document sharing
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.DocumentSharingEx">
+            <summary>
+            Summary description for DesktopSharingEx.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.DocumentSharingEx.CreateLocalDirectoryStructure(System.Boolean)">
+            <summary>
+            This function create a local directory structure for both uploaded and downloaded files
+            </summary>
+            <param name="strPath"></param>
+            <param name="bUpload"></param>
+            
+        </member>
+        <member name="M:WebMeeting.Client.DocumentSharingEx.UploadDocument">
+            <summary>
+            Generic Upload function for all type of documents
+            
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.DocumentSharingOptions">
+            <summary>
+            Summary description for DocumentSharingOptions.
+            </summary>	/// 
+        </member>
+        <member name="F:WebMeeting.Client.DocumentSharingOptions.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.DocumentSharingOptions.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.DocumentSharingOptions.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.StatusBar.DotNetStatusBar">
+            <summary>
+            Summary description for DotNetStatusBar.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.StatusBar.DotNetStatusBar.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.StatusBar.DotNetStatusBar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.StatusBar.DotNetStatusBar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:IMWindow.EmoticonMenuItem">
+            <summary>
+            Summary description for EmoticonMenuItem.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.findparticipents">
+            <summary>
+            Summary description for findparticipents.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.findparticipents.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.findparticipents.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.findparticipents.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.FlashMenuHook">
+            <summary>
+            Summary description for FlashMenuHook.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.frmDownloadWaiting">
+            <summary>
+            Summary description for frmDownloadWaiting.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.frmDownloadWaiting.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.frmDownloadWaiting.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.frmDownloadWaiting.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.#ctor">
+            <summary>
+            Default contructor
+            </summary>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="server"></param>
+            <param name="username"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.#ctor(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="server"></param>
+            <param name="username"></param>
+            <param name="password"></param>
+            <param name="timeoutSeconds"></param>
+            <param name="port"></param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.Login">
+            <summary>
+            Login to the remote server.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.Close">
+            <summary>
+            Close the FTP connection.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.GetFileList">
+            <summary>
+            Return a string array containing the remote directory's file list.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.GetFileList(System.String)">
+            <summary>
+            Return a string array containing the remote directory's file list.
+            </summary>
+            <param name="mask"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.GetFileSize(System.String)">
+            <summary>
+            Return the size of a file.
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.Download(System.String)">
+            <summary>
+            Download a file to the Assembly's local directory,
+            keeping the same file name.
+            </summary>
+            <param name="remFileName"></param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.Download(System.String,System.Boolean)">
+            <summary>
+            Download a remote file to the Assembly's local directory,
+            keeping the same file name, and set the resume flag.
+            </summary>
+            <param name="remFileName"></param>
+            <param name="resume"></param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.Download(System.String,System.String)">
+            <summary>
+            Download a remote file to a local file name which can include
+            a path. The local file name will be created or overwritten,
+            but the path must exist.
+            </summary>
+            <param name="remFileName"></param>
+            <param name="locFileName"></param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.Download(System.String,System.String,System.Boolean)">
+            <summary>
+            Download a remote file to a local file name which can include
+            a path, and set the resume flag. The local file name will be
+            created or overwritten, but the path must exist.
+            </summary>
+            <param name="remFileName"></param>
+            <param name="locFileName"></param>
+            <param name="resume"></param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.Upload(System.String)">
+            <summary>
+            Upload a file.
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.Upload(System.String,System.Boolean)">
+            <summary>
+            Upload a file and set the resume flag.
+            </summary>
+            <param name="fileName"></param>
+            <param name="resume"></param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.UploadDirectory(System.String,System.Boolean)">
+            <summary>
+            Upload a directory and its file contents
+            </summary>
+            <param name="path"></param>
+            <param name="recurse">Whether to recurse sub directories</param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.UploadDirectory(System.String,System.Boolean,System.String)">
+            <summary>
+            Upload a directory and its file contents
+            </summary>
+            <param name="path"></param>
+            <param name="recurse">Whether to recurse sub directories</param>
+            <param name="mask">Only upload files of the given mask - everything is '*.*'</param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.DeleteFile(System.String)">
+            <summary>
+            Delete a file from the remote FTP server.
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.RenameFile(System.String,System.String,System.Boolean)">
+            <summary>
+            Rename a file on the remote FTP server.
+            </summary>
+            <param name="oldFileName"></param>
+            <param name="newFileName"></param>
+            <param name="overwrite">setting to false will throw exception if it exists</param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.MakeDir(System.String)">
+            <summary>
+            Create a directory on the remote FTP server.
+            </summary>
+            <param name="dirName"></param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.RemoveDir(System.String)">
+            <summary>
+            Delete a directory on the remote FTP server.
+            </summary>
+            <param name="dirName"></param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.ChangeDir(System.String)">
+            <summary>
+            Change the current working directory on the remote FTP server.
+            </summary>
+            <param name="dirName"></param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.readResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.readLine">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.sendCommand(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="command"></param>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.createDataSocket">
+            <summary>
+            when doing data transfers, we need to open another socket for it.
+            </summary>
+            <returns>Connected socket</returns>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.cleanup">
+            <summary>
+            Always release those sockets.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.FTP.FtpClient.Finalize">
+            <summary>
+            Destuctor
+            </summary>
+        </member>
+        <member name="P:WebMeeting.FTP.FtpClient.VerboseDebugging">
+            <summary>
+            Display all communications to the debug log
+            </summary>
+        </member>
+        <member name="P:WebMeeting.FTP.FtpClient.Port">
+            <summary>
+            Remote server port. Typically TCP 21
+            </summary>
+        </member>
+        <member name="P:WebMeeting.FTP.FtpClient.Timeout">
+            <summary>
+            Timeout waiting for a response from server, in seconds.
+            </summary>
+        </member>
+        <member name="P:WebMeeting.FTP.FtpClient.Server">
+            <summary>
+            Gets and Sets the name of the FTP server.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:WebMeeting.FTP.FtpClient.RemotePort">
+            <summary>
+            Gets and Sets the port number.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:WebMeeting.FTP.FtpClient.RemotePath">
+            <summary>
+            GetS and Sets the remote directory.
+            </summary>
+        </member>
+        <member name="P:WebMeeting.FTP.FtpClient.Username">
+            <summary>
+            Gets and Sets the username.
+            </summary>
+        </member>
+        <member name="P:WebMeeting.FTP.FtpClient.Password">
+            <summary>
+            Gets and Set the password.
+            </summary>
+        </member>
+        <member name="P:WebMeeting.FTP.FtpClient.BinaryMode">
+            <summary>
+            If the value of mode is true, set binary mode for downloads, else, Ascii mode.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.Greetings">
+            <summary>
+            Summary description for Greetings.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.Greetings.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Greetings.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Greetings.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WebBrowserSubClassing.IEHwd.PlaceHolderArrow_JPG(System.Drawing.Point,System.Drawing.Color,System.String,System.Drawing.Graphics@)">
+            <summary>
+            This section is added by zaeem for to show the annotation on the Jpg image. 
+            </summary>
+            <param name="p"></param>
+            <param name="c"></param>
+            <param name="text"></param>
+            <param name="g2"></param>
+        </member>
+        <member name="F:WebBrowserSubClassing.IEHwd.tool">
+            **************************************************************************************************************************
+        </member>
+        <member name="T:WebMeeting.Client.IEMenuHook">
+            <summary>
+            Summary description for IEMenuHook.
+            </summary>
+        </member>
+        <member name="T:De.Fun.IESaveAsHack.SaveType">
+            <summary>
+            IE has this file options in the "SaveAs" dialog
+            </summary>
+        </member>
+        <member name="T:De.Fun.IESaveAsHack.SaveAsWebbrowser">
+            <summary>
+            Because security reasons the IE always shows a "Save As" dialog box if you want to save a html page complete.
+            This helper class automatically fills out the fields and presses ok.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:De.Fun.IESaveAsHack.SaveAsWebbrowser.#ctor(SHDocVw.IWebBrowser2,System.String,De.Fun.IESaveAsHack.SaveType)" -->
+        <member name="M:De.Fun.IESaveAsHack.SaveAsWebbrowser.SaveAs">
+            <summary>
+            Call this function to save current page - after page is loaded complete
+            </summary>
+            <returns>true if successful</returns>
+        </member>
+        <member name="M:De.Fun.IESaveAsHack.SaveAsWebbrowser.SaveAsHookProc(System.Int32,System.IntPtr,System.IntPtr)">
+            <summary>
+            The hook procedure for dialogs. Only called by windows.
+            </summary>
+            <param name="nCode">Action code</param>
+            <param name="wParam">Depends on action code</param>
+            <param name="lParam">Depends on action code</param>
+            <returns></returns>
+        </member>
+        <member name="T:De.Fun.IESaveAsHack.SaveAsWebbrowser.ThreadPressOk">
+            <summary>
+            Helper thread class.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.Info">
+            <summary>
+            Summary description for Info.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.InviteForm">
+            <summary>
+            Summary description for InviteForm.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.InviteForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.InviteForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.InviteForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.Login">
+            <summary>
+            Summary description for Login.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.Login.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Login.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Login.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.Alerts.MeetingAlerts">
+            <summary>
+            Summary description for MeetingAlerts.
+            </summary>	
+        </member>
+        <member name="F:WebMeeting.Client.Alerts.MeetingAlerts.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Alerts.MeetingAlerts.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.Alerts.MeetingAlerts.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.NetworkManager">
+            <summary>
+            Summary description for NetworkManager.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.NetworkManager.flag_IsWebImageAlreadyActive">
+            <summary>
+            This flag is used to check if the the webshare image based module has already been 
+            shared or not. and is initilaised with a 0 
+            When ever the Webshare is closed it should be assigned 0 again as on the start up when there was 
+            no instance of web was shared.   
+            When ever it has a value >0 it means that new generic Whiteboard control doesn't need to be initialised 
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.NetworkManager.ReceiveMessage(WebMeeting.Common.MessageObject)">
+            <summary>
+             Member	Description
+             Aborted	The thread is in the Stopped state.
+             AbortRequested	The ThreadAbort method has been invoked on the thread,
+             but the thread has not yet received the pending System.Threading.
+             ThreadAbortException that will attempt to terminate it.
+             Background	The thread is being executed as a background thread,
+             as opposed to a foreground thread. 
+             This state is controlled by setting the IsBackground property of the Thread class.
+             Running	The thread has been started, it is not blocked, and there is no pending ThreadAbortException.
+             Stopped	The thread has stopped.
+             StopRequested	The thread is being requested to stop. This is for internal use only.
+             Suspended	The thread has been suspended.
+             SuspendRequested	The thread is being requested to suspend.
+             Unstarted	The Thread.Start method has not been invoked on the thread.
+             WaitSleepJoin	The thread is blocked as a result of a call to Wait, Sleep or Join methods.
+             
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:WebMeeting.Client.NetworkManager.UpdateClientProfile(System.Int32,System.Int32,WebMeeting.Common.ClientProfile@,WebMeeting.Common.ClientProfile@)">
+            <summary>
+            This Method will run for those for which attendee Update is called 
+            and performs all the list related operations fot them
+            As yet there is no try catch block on it 
+            </summary>
+            <param name="nSenderID"></param>
+            <param name="i"></param>
+            <param name="client"></param>
+            <param name="clientProf"></param>
+        </member>
+        <member name="M:WebMeeting.Client.NetworkManager.receiveThread">
+            <summary>
+            for receiving messages of different types 
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.NewBrowserWnd">
+            <summary>
+            Summary description for NewBrowserWnd.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.NewBrowserWnd.axWebBrowser1">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.NewBrowserWnd.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.NewBrowserWnd.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Utility.NiceMenu.NiceMenu">
+            <summary>
+            A great and free improvement menu class!
+            </summary>
+        </member>
+        <member name="F:Utility.NiceMenu.NiceMenu.MenuImages">
+            <summary>
+            Set "MenuImages" with the your ImageList to add icons in your menu.
+            </summary>
+        </member>
+        <member name="M:Utility.NiceMenu.NiceMenu.UpdateMenu(System.Windows.Forms.MainMenu,Utility.NiceMenu.NiceMenuClickEvent)">
+            <summary>
+            this function will update your Main Menu.
+            </summary>
+        </member>
+        <member name="M:Utility.NiceMenu.NiceMenu.UpdateMenu(System.Windows.Forms.ContextMenu,Utility.NiceMenu.NiceMenuClickEvent)">
+            <summary>
+            this function will update your Context Menu.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.NotesControl">
+            <summary>
+            Summary description for NotesControl.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.NotesControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.NotesControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.NotesControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.OAKControls.OAKListView">
+            <summary>
+            Summary description for OAKListVsiew.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.OAKControls.OAKListView.SetImage(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Changing the style of listview to accept image on subitems
+            </summary>7
+            
+        </member>
+        <member name="T:WebMeeting.Client.PresenterExitForm">
+            <summary>
+            Summary description for PresenterExitForm.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.PresenterExitForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.PresenterExitForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.PresenterExitForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.PrintableRichTextBox">
+            <summary>
+            Summary description for PrintableRichTextBox.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.QuestionAnswerAttendee">
+            <summary>
+            Summary description for QuestionAnswerPresenter.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.QuestionAnswerAttendee.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.QuestionAnswerAttendee.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.QuestionAnswerAttendee.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.QuestionAnswerPresenter">
+            <summary>
+            Summary description for QuestionAnswerPresenter.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.QuestionAnswerPresenter.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.QuestionAnswerPresenter.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.QuestionAnswerPresenter.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.rightcarrotWindow">
+            <summary>
+            Summary description for rightcarrotWindow.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.rightcarrotWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.rightcarrotWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.rightcarrotWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.SessionWnd">
+            <summary>
+            Summary description for SessionWnd.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.SessionWnd.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.SessionWnd.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.SessionWnd.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.StartPage">
+            <summary>
+            Summary description for StartPage.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.StartPage.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.StartPage.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.StartPage.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.TabControlEx">
+            <summary>
+            Summary description for TabControlEx.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.TabControlEx.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.TabControlEx.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.TabControlEx.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:WebMeeting.Client.MouseEventCancelHook" -->
+        <member name="T:WebMeeting.CustomUIControls.TaskbarNotifier">
+            <summary>
+            TaskbarNotifier allows to display MSN style/Skinned instant messaging popups
+            </summary>
+        </member>
+        <member name="M:WebMeeting.CustomUIControls.TaskbarNotifier.#ctor">
+            <summary>
+            The Constructor for TaskbarNotifier
+            </summary>
+        </member>
+        <member name="M:WebMeeting.CustomUIControls.TaskbarNotifier.Show(System.String,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Displays the popup for a certain amount of time
+            </summary>
+            <param name="strTitle">The string which will be shown as the title of the popup</param>
+            <param name="strContent">The string which will be shown as the content of the popup</param>
+            <param name="nTimeToShow">Duration of the showing animation (in milliseconds)</param>
+            <param name="nTimeToStay">Duration of the visible state before collapsing (in milliseconds)</param>
+            <param name="nTimeToHide">Duration of the hiding animation (in milliseconds)</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:WebMeeting.CustomUIControls.TaskbarNotifier.Hide">
+            <summary>
+            Hides the popup
+            </summary>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:WebMeeting.CustomUIControls.TaskbarNotifier.SetBackgroundBitmap(System.String,System.Drawing.Color)">
+            <summary>
+            Sets the background bitmap and its transparency color
+            </summary>
+            <param name="strFilename">Path of the Background Bitmap on the disk</param>
+            <param name="transparencyColor">Color of the Bitmap which won't be visible</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:WebMeeting.CustomUIControls.TaskbarNotifier.SetBackgroundBitmap(System.Drawing.Image,System.Drawing.Color)">
+            <summary>
+            Sets the background bitmap and its transparency color
+            </summary>
+            <param name="image">Image/Bitmap object which represents the Background Bitmap</param>
+            <param name="transparencyColor">Color of the Bitmap which won't be visible</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:WebMeeting.CustomUIControls.TaskbarNotifier.SetCloseBitmap(System.String,System.Drawing.Color,System.Drawing.Point)">
+            <summary>
+            Sets the 3-State Close Button bitmap, its transparency color and its coordinates
+            </summary>
+            <param name="strFilename">Path of the 3-state Close button Bitmap on the disk (width must a multiple of 3)</param>
+            <param name="transparencyColor">Color of the Bitmap which won't be visible</param>
+            <param name="position">Location of the close button on the popup</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:WebMeeting.CustomUIControls.TaskbarNotifier.SetCloseBitmap(System.Drawing.Image,System.Drawing.Color,System.Drawing.Point)">
+            <summary>
+            Sets the 3-State Close Button bitmap, its transparency color and its coordinates
+            </summary>
+            <param name="image">Image/Bitmap object which represents the 3-state Close button Bitmap (width must be a multiple of 3)</param>
+            <param name="transparencyColor">Color of the Bitmap which won't be visible</param>
+            /// <param name="position">Location of the close button on the popup</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="P:WebMeeting.CustomUIControls.TaskbarNotifier.TaskbarState">
+            <summary>
+            Get the current TaskbarState (hidden, showing, visible, hiding)
+            </summary>
+        </member>
+        <member name="P:WebMeeting.CustomUIControls.TaskbarNotifier.TitleText">
+            <summary>
+            Get/Set the popup Title Text
+            </summary>
+        </member>
+        <member name="P:WebMeeting.CustomUIControls.TaskbarNotifier.ContentText">
+            <summary>
+            Get/Set the popup Content Text
+            </summary>
+        </member>
+        <member name="P:WebMeeting.CustomUIControls.TaskbarNotifier.NormalTitleColor">
+            <summary>
+            Get/Set the Normal Title Color
+            </summary>
+        </member>
+        <member name="P:WebMeeting.CustomUIControls.TaskbarNotifier.HoverTitleColor">
+            <summary>
+            Get/Set the Hover Title Color
+            </summary>
+        </member>
+        <member name="P:WebMeeting.CustomUIControls.TaskbarNotifier.NormalContentColor">
+            <summary>
+            Get/Set the Normal Content Color
+            </summary>
+        </member>
+        <member name="P:WebMeeting.CustomUIControls.TaskbarNotifier.HoverContentColor">
+            <summary>
+            Get/Set the Hover Content Color
+            </summary>
+        </member>
+        <member name="P:WebMeeting.CustomUIControls.TaskbarNotifier.NormalTitleFont">
+            <summary>
+            Get/Set the Normal Title Font
+            </summary>
+        </member>
+        <member name="P:WebMeeting.CustomUIControls.TaskbarNotifier.HoverTitleFont">
+            <summary>
+            Get/Set the Hover Title Font
+            </summary>
+        </member>
+        <member name="P:WebMeeting.CustomUIControls.TaskbarNotifier.NormalContentFont">
+            <summary>
+            Get/Set the Normal Content Font
+            </summary>
+        </member>
+        <member name="P:WebMeeting.CustomUIControls.TaskbarNotifier.HoverContentFont">
+            <summary>
+            Get/Set the Hover Content Font
+            </summary>
+        </member>
+        <member name="P:WebMeeting.CustomUIControls.TaskbarNotifier.KeepVisibleOnMousOver">
+            <summary>
+            Indicates if the popup should remain visible when the mouse pointer is over it.
+            Added Rev 002
+            </summary>
+        </member>
+        <member name="P:WebMeeting.CustomUIControls.TaskbarNotifier.ReShowOnMouseOver">
+            <summary>
+            Indicates if the popup should appear again when mouse moves over it while it's disappearing.
+            Added Rev 002
+            </summary>
+        </member>
+        <member name="T:WebMeeting.CustomUIControls.TaskbarNotifier.TaskbarStates">
+            <summary>
+            List of the different popup animation status
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.videovoiceControl">
+            <summary>
+            Summary description for videovoiceControl.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.videovoiceControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.videovoiceControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.videovoiceControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeeting.Client.WebFIleInformation">
+            <summary>
+            Summary description for WebFIleInformation.
+            </summary>
+        </member>
+        <member name="F:WebMeeting.Client.WebFIleInformation.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.WebFIleInformation.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeeting.Client.WebFIleInformation.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WebMeetingDrawingBoard.WhiteboardControl">
+            <summary>
+            Summary description for UserControl1.
+            </summary>
+        </member>
+        <member name="F:WebMeetingDrawingBoard.WhiteboardControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>		
+        </member>
+        <member name="M:WebMeetingDrawingBoard.WhiteboardControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:WebMeetingDrawingBoard.WhiteboardControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,19 @@
+<Configuration>
+	<databaseserver>127.0.0.1</databaseserver>
+	<databaseusername>root</databaseusername>
+	<databasepassword></databasepassword>
+	<voiceserverAddress>127.0.0.1</voiceserverAddress>
+	<voiceserverPort>2513</voiceserverPort>	
+	<WEBSERVER_DOCUMENTSHARING_UPLOAD_PATH>C:\inetpub\wwwroot\WebMeeting\Uploads</WEBSERVER_DOCUMENTSHARING_UPLOAD_PATH> 
+	<WEBSERVER_DOCUMENTSHARING_DOWNLOAD_PATH>C:\inetpub\wwwroot\WebMeeting\Downloads\documentsharing</WEBSERVER_DOCUMENTSHARING_DOWNLOAD_PATH> 
+	<WEBSERVER_DOCUMENTSHARING_DOWNLOAD_URL>http://127.0.0.1/webmeeting/downloads/documentsharing/</WEBSERVER_DOCUMENTSHARING_DOWNLOAD_URL>
+
+	<Presentatin_Path>http://127.0.0.1/ctool/public/presentations/</Presentatin_Path>
+	<WebFiles_Path>http://127.0.0.1/ctool/public/uploads/</WebFiles_Path>
+	<FTP_IP>127.0.0.1</FTP_IP>	
+	<FTP_Port>21</FTP_Port>
+	<FTP_Username>ahmed</FTP_Username>
+	<FTP_Password>one</FTP_Password>
+	<Image_URL>http://google.com/logo.gif</Image_URL>
+
+</Configuration>

@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMeetingClient", "WebMeetingClient.csproj", "{1C93295C-345C-49A5-895B-7930A90C5F75}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = WebMeetingClient.csproj
+		SccProjectName0 = \u0022$/COLLABORATION_TOOL/Flexcollab/SOURCE_FLEXCOLLAB\u0022,\u0020NYNAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1C93295C-345C-49A5-895B-7930A90C5F75}.Debug.ActiveCfg = Debug|.NET
+		{1C93295C-345C-49A5-895B-7930A90C5F75}.Debug.Build.0 = Debug|.NET
+		{1C93295C-345C-49A5-895B-7930A90C5F75}.Release.ActiveCfg = Release|.NET
+		{1C93295C-345C-49A5-895B-7930A90C5F75}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

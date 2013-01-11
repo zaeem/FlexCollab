@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="LogRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strQuery" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogRecordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LogRecordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LogRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:LogRecord" />
+  </wsdl:message>
+  <wsdl:message name="LogRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:LogRecordResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LogServiceSoap">
+    <wsdl:operation name="LogRecord">
+      <wsdl:input message="tns:LogRecordSoapIn" />
+      <wsdl:output message="tns:LogRecordSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LogServiceSoap" type="tns:LogServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="LogRecord">
+      <soap:operation soapAction="http://tempuri.org/LogRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LogService">
+    <wsdl:port name="LogServiceSoap" binding="tns:LogServiceSoap">
+      <soap:address location="http://www.compassnav.com/LoggingService/LogService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

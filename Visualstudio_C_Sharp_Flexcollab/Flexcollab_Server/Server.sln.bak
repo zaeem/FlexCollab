@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server.csproj", "{6EBB8C9D-E1E5-4312-9DD5-4B063A4FC885}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectName0 = \u0022$/COLLABORATION_TOOL//Flexcollab/SOURCE_FLEXCOLLAB/FlexCollab_Server\u0022,\u0020VUAAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = false
+		SolutionUniqueID = {E39FD518-9579-4D9A-A379-B9E75996C222}
+		SccProjectUniqueName1 = Server.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{6EBB8C9D-E1E5-4312-9DD5-4B063A4FC885}.Debug.ActiveCfg = Debug|.NET
+		{6EBB8C9D-E1E5-4312-9DD5-4B063A4FC885}.Debug.Build.0 = Debug|.NET
+		{6EBB8C9D-E1E5-4312-9DD5-4B063A4FC885}.Release.ActiveCfg = Release|.NET
+		{6EBB8C9D-E1E5-4312-9DD5-4B063A4FC885}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

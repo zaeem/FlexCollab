@@ -1,0 +1,1594 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{1C93295C-345C-49A5-895B-7930A90C5F75}"
+        SccProjectName = '"$/COLLABORATION_TOOL/Flexcollab/SOURCE_FLEXCOLLAB/FlexCollab_Client", NYNAAAAA'
+        SccLocalPath = "."
+        SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "bin\Release\32x32.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "WebMeetingclient"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "WebMeeting.Client"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "true"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "C:\Program Files\WebMeeting\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "true"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DocumentationFile = "doc\comment.xml"
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "C:\Program Files\WebMeeting\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "0"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "G:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "G:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "G:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "G:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "G:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.Design"
+                    AssemblyName = "System.Design"
+                    HintPath = "..\..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Design.dll"
+                />
+                <Reference
+                    Name = "AxInterop.SHDocVw"
+                    AssemblyName = "AxInterop.SHDocVw"
+                    HintPath = "ReferenceDlls\AxInterop.SHDocVw.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "AxInterop.ShockwaveFlashObjects"
+                    AssemblyName = "AxInterop.ShockwaveFlashObjects"
+                    HintPath = "ReferenceDlls\AxInterop.ShockwaveFlashObjects.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "CollapsibleSplitter"
+                    AssemblyName = "CollapsibleSplitter"
+                    HintPath = "ReferenceDlls\CollapsibleSplitter.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "ColorListBox"
+                    AssemblyName = "ColorListBox"
+                    HintPath = "ReferenceDlls\ColorListBox.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "ImageQuantization"
+                    AssemblyName = "ImageQuantization"
+                    HintPath = "ReferenceDlls\ImageQuantization.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Interop.Excel"
+                    AssemblyName = "Interop.Excel"
+                    HintPath = "ReferenceDlls\Interop.Excel.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Interop.Microsoft.Office.Core"
+                    AssemblyName = "Interop.Microsoft.Office.Core"
+                    HintPath = "ReferenceDlls\Interop.Microsoft.Office.Core.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Interop.PowerPoint"
+                    AssemblyName = "Interop.PowerPoint"
+                    HintPath = "ReferenceDlls\Interop.PowerPoint.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Interop.MSORUNLib"
+                    AssemblyName = "Interop.MSORUNLib"
+                    HintPath = "ReferenceDlls\Interop.MSORUNLib.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Interop.VBIDE"
+                    AssemblyName = "Interop.VBIDE"
+                    HintPath = "ReferenceDlls\Interop.VBIDE.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Interop.WMDEVICECONTROLLib"
+                    AssemblyName = "Interop.WMDEVICECONTROLLib"
+                    HintPath = "ReferenceDlls\Interop.WMDEVICECONTROLLib.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Interop.WMEncAgentLocatorLib"
+                    AssemblyName = "Interop.WMEncAgentLocatorLib"
+                    HintPath = "ReferenceDlls\Interop.WMEncAgentLocatorLib.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Interop.WMEncAgtLib"
+                    AssemblyName = "Interop.WMEncAgtLib"
+                    HintPath = "ReferenceDlls\Interop.WMEncAgtLib.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Interop.WMEncoderLib"
+                    AssemblyName = "Interop.WMEncoderLib"
+                    HintPath = "ReferenceDlls\Interop.WMEncoderLib.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Interop.Word"
+                    AssemblyName = "Interop.Word"
+                    HintPath = "ReferenceDlls\Interop.Word.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Khendys.Controls.ExRichTextBox"
+                    AssemblyName = "Khendys.Controls.ExRichTextBox"
+                    HintPath = "ReferenceDlls\Khendys.Controls.ExRichTextBox.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "XPListview"
+                    AssemblyName = "XPListview"
+                    HintPath = "ReferenceDlls\XPListview.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "PieChart"
+                    AssemblyName = "PieChart"
+                    HintPath = "ReferenceDlls\PieChart.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "nspring"
+                    AssemblyName = "nspring"
+                    HintPath = "ReferenceDlls\nspring.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "nsbutton"
+                    AssemblyName = "NSButton"
+                    HintPath = "ReferenceDlls\nsbutton.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Microsoft.mshtml"
+                    AssemblyName = "Microsoft.mshtml"
+                    HintPath = "ReferenceDlls\Microsoft.mshtml.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX"
+                    AssemblyName = "Microsoft.DirectX"
+                    HintPath = "ReferenceDlls\Microsoft.DirectX.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX.Direct3DX"
+                    AssemblyName = "Microsoft.DirectX.Direct3DX"
+                    HintPath = "ReferenceDlls\Microsoft.DirectX.Direct3DX.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX.Direct3D"
+                    AssemblyName = "Microsoft.DirectX.Direct3D"
+                    HintPath = "ReferenceDlls\Microsoft.DirectX.Direct3D.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX.AudioVideoPlayback"
+                    AssemblyName = "Microsoft.DirectX.AudioVideoPlayback"
+                    HintPath = "ReferenceDlls\Microsoft.DirectX.AudioVideoPlayback.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "AxInterop.DIRECTORSHOCKWAVELib"
+                    AssemblyName = "AxInterop.DIRECTORSHOCKWAVELib"
+                    HintPath = "ReferenceDlls\AxInterop.DIRECTORSHOCKWAVELib.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Interop.WMPREVIEWLib"
+                    AssemblyName = "Interop.WMPREVIEWLib"
+                    HintPath = "ReferenceDlls\Interop.WMPREVIEWLib.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "bevButton"
+                    AssemblyName = "bevButton"
+                    HintPath = "ReferenceDlls\bevButton.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Interop.SHDocVw"
+                    AssemblyName = "Interop.SHDocVw"
+                    HintPath = "ReferenceDlls\Interop.SHDocVw.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "AxSHDocVw"
+                    AssemblyName = "AxSHDocVw"
+                    HintPath = "ReferenceDlls\AxSHDocVw.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "SHDocVw"
+                    AssemblyName = "SHDocVw"
+                    HintPath = "ReferenceDlls\SHDocVw.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "DownloaderLibrary"
+                    AssemblyName = "DownloaderLibrary"
+                    HintPath = "ReferenceDlls\DownloaderLibrary.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "batte.utilities.controls"
+                    AssemblyName = "Batte.Utilities.Controls"
+                    HintPath = "referencedlls\batte.utilities.controls.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "System.Configuration.Install"
+                    AssemblyName = "System.Configuration.Install"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Configuration.Install.dll"
+                />
+                <Reference
+                    Name = "MagicLibrary"
+                    AssemblyName = "MagicLibrary"
+                    HintPath = "ReferenceDlls\MagicLibrary.dll"
+                />
+                <Reference
+                    Name = "MsHtmHstInterop"
+                    AssemblyName = "MsHtmHstInterop"
+                    HintPath = "C:\Program Files\WebMeeting\MsHtmHstInterop.dll"
+                />
+                <Reference
+                    Name = "GenuineChannels"
+                    AssemblyName = "GenuineChannels"
+                    HintPath = "C:\Program Files\Genuine Channels\DLL\Framework 1.1\Release\GenuineChannels.dll"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.Services.dll"
+                />
+                <Reference
+                    Name = "System.Management"
+                    AssemblyName = "System.Management"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Management.dll"
+                />
+                <Reference
+                    Name = "SQLiteProxy"
+                    AssemblyName = "SQLiteProxy"
+                    HintPath = "ReferenceDlls\SQLiteProxy.dll"
+                />
+                <Reference
+                    Name = "SQLite.NET"
+                    AssemblyName = "SQLite.NET"
+                    HintPath = "ReferenceDlls\SQLite.NET.dll"
+                />
+                <Reference
+                    Name = "SQLiteClient"
+                    AssemblyName = "SQLiteClient"
+                    HintPath = "ReferenceDlls\SQLiteClient.dll"
+                />
+                <Reference
+                    Name = "Accessibility"
+                    AssemblyName = "Accessibility"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\Accessibility.dll"
+                />
+                <Reference
+                    Name = "Win32"
+                    AssemblyName = "Win32"
+                    HintPath = "ReferenceDlls\Win32.dll"
+                />
+                <Reference
+                    Name = "ICSharpCode.SharpZipLib"
+                    AssemblyName = "ICSharpCode.SharpZipLib"
+                    HintPath = "ReferenceDlls\ICSharpCode.SharpZipLib.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "KnownObjects"
+                    AssemblyName = "KnownObjects"
+                    HintPath = "ReferenceDlls\KnownObjects.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "aboutWebMeeting.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "aboutWebMeeting.resx"
+                    DependentUpon = "aboutWebMeeting.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AccessCodes.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AccessCodes.resx"
+                    DependentUpon = "AccessCodes.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "advertiseBrowser.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "advertiseBrowser.resx"
+                    DependentUpon = "advertiseBrowser.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AnnotationForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AnnotationForm.resx"
+                    DependentUpon = "AnnotationForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "App.config"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AudioComponent.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "browser.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "browser.resx"
+                    DependentUpon = "browser.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "chatControl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "chatControl.resx"
+                    DependentUpon = "chatControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "chatMessageAlert.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "chatMessageAlert.resx"
+                    DependentUpon = "chatMessageAlert.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ClientUI.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ClientUI.resx"
+                    DependentUpon = "ClientUI.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "config.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "cross.bmp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "cur.gif"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "CustomExceptionunhandler.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CustomPicturebox.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CustomPicturebox.resx"
+                    DependentUpon = "CustomPicturebox.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DebugConsole.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DebugConsole.resx"
+                    DependentUpon = "DebugConsole.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DebugForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DebugForm.resx"
+                    DependentUpon = "DebugForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DesktopCloseWnd.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopCloseWnd.resx"
+                    DependentUpon = "DesktopCloseWnd.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DocumentSharing.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "documentSharingControl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "documentSharingControl.resx"
+                    DependentUpon = "documentSharingControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DocumentSharingEx.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DocumentSharingOptions.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DocumentSharingOptions.resx"
+                    DependentUpon = "DocumentSharingOptions.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DotNetStatusBar.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DotNetStatusBar.resx"
+                    DependentUpon = "DotNetStatusBar.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EmoticonMenuItem.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "EmoticonMenuItem.resx"
+                    DependentUpon = "EmoticonMenuItem.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "findparticipents.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "findparticipents.resx"
+                    DependentUpon = "findparticipents.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FlashMenuHook.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmDownloadWaiting.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmDownloadWaiting.resx"
+                    DependentUpon = "frmDownloadWaiting.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpClient.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Greetings.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Greetings.resx"
+                    DependentUpon = "Greetings.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "IEControlHook.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "IEMenuHook.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "IESaveAs.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Info.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "InviteForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "InviteForm.resx"
+                    DependentUpon = "InviteForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Login.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Login.resx"
+                    DependentUpon = "Login.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MagicLibrary.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "MeetingAlerts.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MeetingAlerts.resx"
+                    DependentUpon = "MeetingAlerts.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "NetworkManager.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NewBrowserWnd.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NewBrowserWnd.resx"
+                    DependentUpon = "NewBrowserWnd.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "NiceMenu.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NiceMenu.resx"
+                    DependentUpon = "NiceMenu.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "NotesControl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NotesControl.resx"
+                    DependentUpon = "NotesControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OAKListView.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OAKListView.resx"
+                    DependentUpon = "OAKListView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PresenterExitForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PresenterExitForm.resx"
+                    DependentUpon = "PresenterExitForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PrintableRichTextBox.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "QuestionAnswerAttendee.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "QuestionAnswerAttendee.resx"
+                    DependentUpon = "QuestionAnswerAttendee.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "QuestionAnswerPresenter.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "QuestionAnswerPresenter.resx"
+                    DependentUpon = "QuestionAnswerPresenter.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "rightcarrotWindow.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "rightcarrotWindow.resx"
+                    DependentUpon = "rightcarrotWindow.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SessionWnd.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SessionWnd.resx"
+                    DependentUpon = "SessionWnd.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "skincrafter.net-vs2003.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SpecialServices.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "StartPage.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "StartPage.resx"
+                    DependentUpon = "StartPage.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "TabControlEx.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TabControlEx.resx"
+                    DependentUpon = "TabControlEx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "tabControlMouseEventCancel.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TaskbarNotifier.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TaskbarNotifier.resx"
+                    DependentUpon = "TaskbarNotifier.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "videovoiceControl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "videovoiceControl.resx"
+                    DependentUpon = "videovoiceControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WebFIleInformation.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WebFIleInformation.resx"
+                    DependentUpon = "WebFIleInformation.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WebMeetingVideo.swf"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WhiteboardControl.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WhiteboardControl.resx"
+                    DependentUpon = "WhiteboardControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "window.bmp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AppSharing\ApplicationSharing.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AppSharing\ApplicationSharing.resx"
+                    DependentUpon = "ApplicationSharing.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AppSharing\AppSharing.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AppSharing\BitmapManipulator.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AppSharing\PostHtm.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AppSharing\preHtm.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AppSharing\Processes.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AppSharing\SmallWindow.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AppSharing\SmallWindow.resx"
+                    DependentUpon = "SmallWindow.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AppSharing\ThreadPoolUnit.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AppSharing\TypedText.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AppSharing\TypedText.resx"
+                    DependentUpon = "TypedText.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AppSharing\UserActivityHook.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AudioCodec\FifoStream.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AudioCodec\WaveIn.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AudioCodec\WaveNative.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AudioCodec\WaveOut.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AudioCodec\WaveStream.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Balloon Tips\FMSBalloonTip.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ClientDataBase\DataBaseAccess.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DockingToolbar\AllowedBorders.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DockingToolbar\DockLocation.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DockingToolbar\ToolBarDockArea.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DockingToolbar\ToolBarDockArea.resx"
+                    DependentUpon = "ToolBarDockArea.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DockingToolbar\ToolBarDockHolder.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DockingToolbar\ToolBarDockHolder.resx"
+                    DependentUpon = "ToolBarDockHolder.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DockingToolbar\ToolBarManager.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "E-Mail\MapiApi.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "E-Mail\MapiApi.resx"
+                    DependentUpon = "MapiApi.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "E-Mail\SendForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "E-Mail\SendForm.resx"
+                    DependentUpon = "SendForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ListProcess\Cursors.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ListProcess\Data.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ListProcess\Kernel32.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ListProcess\OSVersion.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ListProcess\Settings.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ListProcess\Tree.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LoggingModule\LogWriter.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ManageContent\frmDownloader.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ManageContent\frmDownloader.resx"
+                    DependentUpon = "frmDownloader.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ManageContent\ManageContentBookmarks.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ManageContent\ManageContentBookmarks.resx"
+                    DependentUpon = "ManageContentBookmarks.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ManageContent\ManageContentInfo.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ManageContent\ManageContentInfo.resx"
+                    DependentUpon = "ManageContentInfo.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ManageContent\ManageContentWebEvaluations.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ManageContent\ManageContentWebEvaluations.resx"
+                    DependentUpon = "ManageContentWebEvaluations.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ManageContent\ManageContentWebFiles.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ManageContent\ManageContentWebFiles.resx"
+                    DependentUpon = "ManageContentWebFiles.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ManageContent\ManageContentWebPolls.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ManageContent\ManageContentWebPolls.resx"
+                    DependentUpon = "ManageContentWebPolls.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ManageContent\ManageContentWebPresentations.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ManageContent\ManageContentWebPresentations.resx"
+                    DependentUpon = "ManageContentWebPresentations.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Minuts_Meeting\Minuts_Controller.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Minuts_Meeting\Progressbar.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Minuts_Meeting\Progressbar.resx"
+                    DependentUpon = "Progressbar.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MySql\Field.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MySql\libmySQL.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "MySql\MySql.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MySql\MyWrapper.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NetworkDiagonstic\GenerateString.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NetworkDiagonstic\TestNetwork.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NetworkDiagonstic\TestNetwork.resx"
+                    DependentUpon = "TestNetwork.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Polling\frm_PollAttendee.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Polling\frm_PollAttendee.resx"
+                    DependentUpon = "frm_PollAttendee.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Polling\frm_PollPresenter.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Polling\frm_PollPresenter.resx"
+                    DependentUpon = "frm_PollPresenter.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Polling\PieChart.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Polling\PollAttendeeForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Polling\PollAttendeeForm.resx"
+                    DependentUpon = "PollAttendeeForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Polling\Polling.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Polling\PollingFreeFormAnswerForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Polling\PollingFreeFormAnswerForm.resx"
+                    DependentUpon = "PollingFreeFormAnswerForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Polling\PollingOptions.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Polling\PollingOptions.resx"
+                    DependentUpon = "PollingOptions.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Polling\PollingQuestionDetails.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Polling\PollingQuestionDetails.resx"
+                    DependentUpon = "PollingQuestionDetails.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Polling\PollResult.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Polling\PollResult.resx"
+                    DependentUpon = "PollResult.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "QAStuff\frmQAAttendee.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "QAStuff\frmQAAttendee.resx"
+                    DependentUpon = "frmQAAttendee.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "QAStuff\frmQAPresenter.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "QAStuff\frmQAPresenter.resx"
+                    DependentUpon = "frmQAPresenter.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ReferenceDlls\AxInterop.DIRECTORSHOCKWAVELib.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\AxInterop.SHDocVw.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\AxInterop.ShockwaveFlashObjects.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\AxSHDocVw.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Batte.Utilities.Controls.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\bevButton.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\CollapsibleSplitter.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\ColorListBox.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\DownloaderLibrary.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\GenuineChannels.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\ICSharpCode.SharpZipLib.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\ImageQuantization.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Interop.Excel.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Interop.Microsoft.Office.Core.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Interop.MSORUNLib.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Interop.PowerPoint.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Interop.SHDocVw.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Interop.VBIDE.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Interop.WMDEVICECONTROLLib.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Interop.WMEncAgentLocatorLib.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Interop.WMEncAgtLib.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Interop.WMEncoderLib.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Interop.WMPREVIEWLib.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Interop.Word.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Khendys.Controls.ExRichTextBox.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\KnownObjects.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\MagicLibrary.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\MFC71.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Microsoft.DirectX.AudioVideoPlayback.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Microsoft.DirectX.Direct3D.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Microsoft.DirectX.Direct3DX.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Microsoft.DirectX.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\Microsoft.mshtml.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\nsbutton.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\nspring.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\NZipLib.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\PieChart.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReferenceDlls\XPListview.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Resolution\Resolution.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Resolution\ResolutionController.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Screen Capture\Config.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Screen Capture\Config.resx"
+                    DependentUpon = "Config.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Screen Capture\DXUtil.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Screen Capture\frm_AudioConfig.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Screen Capture\frm_AudioConfig.resx"
+                    DependentUpon = "frm_AudioConfig.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Screen Capture\frm_AudioConfig2.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Screen Capture\frm_AudioConfig2.resx"
+                    DependentUpon = "frm_AudioConfig2.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Screen Capture\frm_Main.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Screen Capture\frm_Main.resx"
+                    DependentUpon = "frm_Main.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Screen Capture\frmPerformance.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Screen Capture\frmPerformance.resx"
+                    DependentUpon = "frmPerformance.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Screen Capture\frmPicView.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Screen Capture\frmPicView.resx"
+                    DependentUpon = "frmPicView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Screen Capture\Playback.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Screen Capture\Playback.resx"
+                    DependentUpon = "Playback.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Screen Capture\ScreenCapture.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Screen Capture\ScreenControl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Screen Capture\ScreenControl.resx"
+                    DependentUpon = "ScreenControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Screen Capture\SourceEnum.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Screen Capture\SourceEnum.resx"
+                    DependentUpon = "SourceEnum.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Web References\LogServiceOnline\LogService.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\LogServiceOnline\LogService.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\LogServiceOnline\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\LogServiceOnline\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\LogServiceOnline\"
+                    WebReferenceUrl = "http://www.compassnav.com/LoggingService/LogService.asmx"
+                    UrlBehavior = "Static"
+                />
+                <Folder
+                    RelPath = "Web References\"
+                    WebReferences = "TRUE"
+                />
+                <File
+                    RelPath = "WhiteBoard\Whiteboard.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WhiteBoard\Whiteboard.resx"
+                    DependentUpon = "Whiteboard.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WMIStuff\SystemInformationClass.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WMIStuff\WebServiceLogging.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Xml Handling\DocSharedList.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Xml Handling\docsSharing.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "docsSharing.cs"
+                />
+                <File
+                    RelPath = "Xml Handling\docsSharing.cs"
+                    DependentUpon = "docsSharing.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Xml Handling\docsSharing.xsx"
+                    DependentUpon = "docsSharing.xsd"
+                    BuildAction = "None"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

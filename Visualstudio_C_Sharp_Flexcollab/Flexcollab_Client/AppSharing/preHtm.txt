@@ -1,0 +1,61 @@
+<html>
+	<head>
+	<style type="text/css">
+<!--
+.style1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+a {
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+a:hover {
+	color: #40C2F3;
+	text-decoration: underline;
+}
+a:active {
+	color: #666666;
+	text-decoration: none;
+}
+a:link {
+	text-decoration: none;
+}
+-->
+</style>
+	<script language="JavaScript">
+	
+	function callHostUI(processtitle)
+	{
+		//alert(processtitle);
+		window.external.ExternalAnchoreClick(processtitle);
+	}
+	function callRefreshprocess()
+	{
+		window.external.RefreshProcesses();
+	}	
+	
+	</script>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<title>::CompassNav::</title>
+	<body>
+<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+   <tr>
+    <td bgcolor="#00AEEF"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="2%"></td>
+        <td width="98%" height="25"><div align="right"> 
+          <table width="100%"  border="0" cellspacing="2" cellpadding="2">
+            <tr>
+              <td width="89%"><span class="head-0 style1">Applications to share on your System</span></td>
+              <td width="11%"></td>
+            </tr>
+          </table>
+                   </td>
+      </tr>
+    </table></td>
+  </tr>

@@ -1,0 +1,7 @@
+<Configuration>
+  <ServerIP>127.0.0.1</ServerIP>
+  <!--<WebsiteName>http://www.compassnav.com</WebsiteName>-->
+  <WebsiteName>http://216.117.130.240:5216</WebsiteName>
+  <ServerPort>80</ServerPort>
+  <FTPIP>danish</FTPIP>    
+</Configuration>
